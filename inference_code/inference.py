@@ -51,4 +51,4 @@ def output_fn(prediction, response_content_type):
     """
     Return model's prediction
     """
-    return {'summary':prediction}
+    return {'generated_text':prediction}

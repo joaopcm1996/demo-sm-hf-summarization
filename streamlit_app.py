@@ -24,7 +24,7 @@ def predict(text, len_pen, endpoint_name='summarization-endpoint'):
                                  )
     response_text = json.loads(response['Body'].read().decode())
     
-    return response_text['summary']
+    return response_text['generated_text']
 
 st.sidebar.subheader('Choose a shorter or longer summary')
 slider = st.sidebar.slider(
